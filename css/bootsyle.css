@@ -1,0 +1,17 @@
+.navbar{
+    border-radius:0px;
+    background-color:rgb(28, 40, 206);
+    border:none;
+    padding:10px;
+}
+.navbar-nav{
+    float:right;
+}
+.main-content{
+    background-image: url('../images/travel-guide.jpg');
+    background-repeat: no-repeat;
+    height:750px;
+    width:100%;
+    text-align:center;
+    
+}

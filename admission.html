@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Application Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <style>
+       body{
+           margin:0;
+           padding:0;
+       }
+       form{
+           width:700px;
+           position:absolute;
+           top:20px;
+           right:0;
+           bottom:20px;
+           left: 0;
+           margin: 0 auto;
+           background-color: #4682b436;
+           padding:20px;
+           height:1000px;
+           border-radius: 30px;
+           box-shadow: 3px 4px 5px 2px rgba(80, 78, 78, 0.082);
+           
+       }
+       h1{
+           text-align: center;
+           color:#000;
+       }
+       .upload{
+           width:150px;
+           height:150px;
+           border:1px solid black;
+           float:right;
+           padding:10px 10px;
+       }
+       label{
+           font-size: 20px;
+           padding:10px;
+           text-align: right;
+           text-transform: capitalize;
+       }
+       .info{
+           width:300px;
+           padding:10px 10px;
+           outline: none;
+           box-sizing: border-box;
+           margin-top: 10px;
+           background-color: inherit;
+           margin-left :10px;;
+           font-size: 20px;
+          
+           
+           
+       }
+       .gender{
+           width:50px;
+           
+
+       }
+       .info:focus{
+           
+           background-color: #fff;
+           border-color:skyblue;
+       }
+       .submit{
+           color:white;
+           background-color: #128f1d;
+           padding:5px 5px;
+           display: inline-block;
+           width:150px;
+           border:none;
+           font-size: 25px;
+           margin: 20px;
+           text-transform: capitalize;
+           border-radius: 20px;
+       }
+       .cancel{
+        color:white;
+           background-color: red;
+           padding:5px 5px;
+           display: inline-block;
+           width:150px;
+           border:none;
+           font-size: 25px;
+            text-transform: capitalize;
+           border-radius: 20px;
+           margin:20px;
+
+       }
+       .back{
+        color:#fff;
+           background-color: #000fff;
+           padding:5px 5px;
+           display: inline-block;
+           width:150px;
+           border:none;
+           font-size: 25px;
+            text-transform: capitalize;
+           border-radius: 20px;
+           margin:20px;
+
+       }
+       .back:hover{
+           background-color:#fff;
+           color:blue;
+           cursor:pointer;
+
+       }
+       .cancel:hover{
+           background-color: #fff;
+           cursor: pointer;
+           color:red;
+
+       }
+       .submit:hover{
+           background-color: #fff;
+           cursor: pointer;
+           color:#128f1d
+       }
+
+   </style> 
+</head>
+<body>
+        
+    <form  method ="POST" action="">
+            <h1>Application form</h1>
+        <div class="upload"><p>Please upload your photo</p></div>
+         <label for="surname">Surname:</label>
+         <input type="text" name="surname" class="info" required></br></br>
+
+         <label for="firstname">Firstname:</label>
+         <input type="text" name="firstname" class="info" required></br></br>
+
+         <label for="othernames">Othernames:</label>
+         <input type="text" name="othernames" class="info" required></br></br>
+
+         <label for="gender">Gender</label>
+         <input type="radio" name="gender" value="female" class="gender">female
+         <input type="radio" name="gender" value="male" class="gender">male</br></br>
+
+
+         <label for="email">Email:</label>
+         <input type="email" type="email"class="info" required></br></br>
+
+         <label for="number">Phone number:</label>
+         <input type="number" type="number"class="info"></br></br>
+
+         <label for="date-of-birth">Date Of Birth:</label>
+         <input type="date" name="date-of-birth" class="info"></br></br>
+       
+   
+
+
+    
+        <label for="department">Select Department</label>
+        <select name="" id=""class="info">
+            <option value="">Programming</option>
+            <option value="">Networking</option>
+            <option value="">web development</option>
+            <option value="">Artificial intelligence</option>
+        </select><br></br>
+
+        <label for="faculty">Faculty</label>
+        <select name="" id="" class="info">
+            <option value="">Science</option>
+            <option value="">Information Texhnology</option>
+            <option value="">Health Technology</option>
+            <option value="">Hardware & Maintnance</option>
+        </select><br></br>
+
+        <label for="program">Program Type</label>
+        <select name="" id="" class="info">
+            <option value="">6 months certificate</option>
+            <option value="">Diploma</option>
+            <option value="">Advanced</option>
+            <option value="">Part time</option>
+        </select></br></br>
+    
+    
+    <input type="checkbox" name="confirm" id="">I agree to the terms and conditions<br></br>
+    <input type="checkbox" name="confirm" id="">I  do  not agree to the terms and conditions<br></br>
+    <input type="submit" value="submit" class="submit">
+    <input type="submit" value="cancel" class="cancel">
+    <a href="index.html"><input type="submit" value="back" class="back"></a>
+
+    </form>
+    
+</body>
+</html>
